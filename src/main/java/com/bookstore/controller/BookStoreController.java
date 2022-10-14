@@ -25,7 +25,7 @@ public class BookStoreController {
 	private IBookStoreService service;
 	
 	@GetMapping("ping")
-	public ResponseEntity<String> getBooks(){
+	public ResponseEntity<String> testApi(){
 		return new ResponseEntity<String>("Cool", HttpStatus.OK);
 	}
 	
