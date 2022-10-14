@@ -24,6 +24,11 @@ public class BookStoreController {
 	@Autowired
 	private IBookStoreService service;
 	
+	@GetMapping("ping")
+	public ResponseEntity<String> getBooks(){
+		return new ResponseEntity<String>("Cool", HttpStatus.OK);
+	}
+	
 	@GetMapping("books")
 	public ResponseEntity<List<Book>> getBooks(){
 		
